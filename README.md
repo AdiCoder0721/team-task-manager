@@ -1,28 +1,69 @@
-# 🚀 Team Task Manager (Full-Stack)
+# 🚀 Team Work Manager (Full-Stack)
 
-A full-stack task management web application where users can create projects, assign tasks, and track progress with role-based access (Admin / Member).
-
----
-
-## 🔗 Live Demo
-
-👉 https://team-task-manager-nine-pearl.vercel.app/
-
-## 📂 GitHub Repository
-
-👉 https://github.com/AdiCoder0721/team-task-manager
+A full-stack web application to manage team projects, assign tasks, and track progress with role-based access (Admin & Member).
 
 ---
 
-## ✨ Features
+## 🌐 Live Application
 
-* 🔐 Authentication (Signup / Login)
-* 👥 Role-Based Access (Admin & Member)
-* 📁 Project Management
-* ✅ Task Creation & Assignment
-* 📊 Dashboard with Task Stats
-* ⏳ Status Tracking (Todo / In Progress / Completed)
-* 🔄 Real-time Updates (auto refresh)
+🔗 Frontend: https://team-work-manager.netlify.app/
+🔗 Backend: https://team-task-manager-production-1f78.up.railway.app/
+
+🔗 Live Link: https://team-work-manager.netlify.app/
+
+
+---
+
+## 🎥 Demo Video
+
+🔗 Add your demo video link here
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication
+
+* Secure Signup & Login using JWT
+* Protected routes with middleware
+
+### 👥 Role-Based Access Control
+
+* **Admin**
+
+  * Create projects
+  * Assign tasks to team members
+  * View all created tasks
+* **Member**
+
+  * View assigned tasks only
+  * Update task status
+
+### 📁 Project Management
+
+* Admin can create projects
+* Tasks are linked with specific projects
+
+### ✅ Task Management
+
+* Create tasks with:
+
+  * Title
+  * Description
+  * Assigned user
+  * Project
+  * Due date
+* Status tracking:
+
+  * Todo
+  * In Progress
+  * Completed
+
+### 📊 Dashboard
+
+* View total tasks
+* Track in-progress and completed tasks
+* Real-time updates (auto refresh)
 
 ---
 
@@ -31,21 +72,54 @@ A full-stack task management web application where users can create projects, as
 ### Frontend
 
 * React (Vite)
-* CSS (Custom / Responsive UI)
 * Axios
+* Custom CSS (Responsive UI)
 
 ### Backend
 
 * Node.js
 * Express.js
+* REST API
 
 ### Database
 
 * MongoDB (Mongoose)
 
+### Deployment
+
+* Frontend → Netlify
+* Backend → Railway
+
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Project Structure
+
+```
+team-task-manager/
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   └── public/
+│
+└── README.md
+```
+
+---
+
+## 🔒 Role Logic
+
+* Admin can manage all tasks they create
+* Members can only access tasks assigned to them
+* Authorization handled securely on backend
+
+---
+
+## 🚀 Setup Instructions
 
 ### 1️⃣ Clone the repository
 
@@ -61,7 +135,7 @@ cd team-task-manager
 ```bash
 cd backend
 npm install
-npm run dev
+npm start
 ```
 
 ---
@@ -78,50 +152,35 @@ npm run dev
 
 ## 🔐 Environment Variables
 
-Create `.env` file in backend:
+Create `.env` file inside backend:
 
-```env
+```
 PORT=5000
-MONGO_URI=your_mongodb_url
+MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
 ```
 
 ---
 
-## 📸 Screenshots
-
-*<img width="1919" height="930" alt="image" src="https://github.com/user-attachments/assets/b76c4af2-b99c-4d53-ae9b-f47afb74e176" />
-
-* <img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/de1e956c-5bbb-4794-ae80-c9d8970794b4" />
-
-* <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/8c03c240-5a60-4ae3-a533-5f00da9ed2f0" />
+## 📸 Screenshots (Optional but Recommended)
 
 
+<img width="1919" height="926" alt="Screenshot 2026-05-01 121043" src="https://github.com/user-attachments/assets/88e2b33d-aba8-49f0-a94f-00fa656d899e" />
+
+* <img width="1919" height="924" alt="Screenshot 2026-05-01 121031" src="https://github.com/user-attachments/assets/c639c636-9c79-42c5-81cf-287d2f3298af" />
 
 
----
+* <img width="1919" height="930" alt="Screenshot 2026-05-01 121003" src="https://github.com/user-attachments/assets/012951f7-6449-4b4a-be71-7d9130bb4617" />
 
-## 🚀 Deployment
-
-Deployed on Railway:
-
-* Backend: Railway
-* Frontend: Railway / Vercel
 
 ---
 
-## 🎥 Demo Video
+## 📈 Future Improvements
 
-👉 Add your 2–5 min demo video link here
-
----
-
-## 📌 Project Highlights
-
-* Clean UI & responsive design
-* Proper API structure
-* Role-based authorization
-* Scalable folder structure
+* Real-time updates using WebSockets
+* Task notifications
+* File attachments
+* Kanban board view
 
 ---
 
@@ -132,6 +191,6 @@ GitHub: https://github.com/AdiCoder0721
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Final Note
 
-Give it a star ⭐ on GitHub!
+This project was built as part of a technical assessment to demonstrate full-stack development skills, REST API design, authentication, and role-based systems.
