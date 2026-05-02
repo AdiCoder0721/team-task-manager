@@ -187,7 +187,7 @@ JWT_SECRET=your_secret_key
 ## 👨‍💻 Author
 
 **Aditya Yadav**
-GitHub: https://github.com/AdiCoder0721
+GitHub: https://github.com/AdiCoder0721/team-task-manager
 
 ---
 
