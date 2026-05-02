@@ -1,4 +1,4 @@
-# 🚀 Team Work Manager (Full-Stack)
+# 🚀 Team Task Manager (Full-Stack)
 
 A full-stack web application to manage team projects, assign tasks, and track progress with role-based access (Admin & Member).
 
